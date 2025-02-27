@@ -1,0 +1,1 @@
+//Stack(primitive ) heap(non-perimiitve)
