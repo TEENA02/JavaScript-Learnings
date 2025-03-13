@@ -23,7 +23,7 @@ const dc=["batman","superman","wonderWomen"]
 
 const ar=hero.concat(dc)
 //console.log(ar);
-//SPREAD OPERATOR...
+//SPREAD OPERATOR  ...
 const newHero=[...hero,...dc]
 // console.log(newHero);
 //if there are multple arrays in a array then its done by FLAT
