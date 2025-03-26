@@ -80,3 +80,19 @@ myobj.forEach((x)=>{
   console.log(x.age,x.gender);
   
 })
+function pt(item) {
+  console.log(item);
+  
+}
+code.forEach(pt)
+code.forEach((item,index,arrlist)=>{
+console.log(item,index,arrlist);
+
+})
+
+//output
+// js 0 [ 'js', 'CPP', 'java', 'C', 'ruby' ]
+// CPP 1 [ 'js', 'CPP', 'java', 'C', 'ruby' ]
+// java 2 [ 'js', 'CPP', 'java', 'C', 'ruby' ]
+// C 3 [ 'js', 'CPP', 'java', 'C', 'ruby' ]
+// ruby 4 [ 'js', 'CPP', 'java', 'C', 'ruby' ]
