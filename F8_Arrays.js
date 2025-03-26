@@ -29,10 +29,10 @@ const newHero=[...hero,...dc]
 //if there are multple arrays in a array then its done by FLAT
 const arr2=[1,2,3,[4,5,6],7,[6,7,[4,5]]];
 const realArr=arr2.flat(Infinity)
-console.log(realArr);
+//console.log(realArr);
 //isARRAY AND FROM Method to check and make array
-console.log(Array.isArray("teena"));
-console.log(Array.from("teena sajwan"));
+// console.log(Array.isArray("teena"));
+// console.log(Array.from("teena sajwan"));
 //An iterable object to convert to an array.
 /*[
     't', 'e', 'e', 'n',
@@ -43,14 +43,40 @@ console.log(Array.from("teena sajwan"));
 
 //Interiew case SCenerio
 
-console.log(Array.from({name:"teena"}));// this will return  an empty object []
+//console.log(Array.from({name:"teena"}));// this will return  an empty object []
 
 
 let score1=100
 let score2=200
 let score3=300
-console.log(Array.of(score1,score2,score3));//A set of elements to include in the new array object.Returns a new array from a set of elements.
+//console.log(Array.of(score1,score2,score3));//A set of elements to include in the new array object.Returns a new array from a set of elements.
 
-
-
-
+//HIGHER ORDER FUNCTIONS
+const code=["js","CPP","java","C","ruby"]
+//The forEach() method of Array instances executes a provided function once for each array element.
+code.forEach((x)=>{x=x+"-lol" 
+  //console.log(x);
+  
+})
+const myobj=[
+  {
+    age:23,
+    gender:"M"
+  },
+  {
+    age:22,
+    gender:"F"
+  },
+  {
+    age:20,
+    gender:"M"
+  },
+  {
+    age:13,
+    gender:"F"
+  },
+]
+myobj.forEach((x)=>{
+  console.log(x.age,x.gender);
+  
+})
