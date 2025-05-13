@@ -65,40 +65,39 @@
     //   "click", function (e) {
     //      console.log("owl clicked again")
     //     //console.log(e);
-        
+
     // }, false);
 
-    //third parameter by default false 
+    //third parameter by default false
     //types of event, timestamp , defaultprevent,target , toElement,secElement
     //cleintX, clentY, screenX, screenY
     //altKey,ctrlKey,shiftKey , KeyCode
     //Event propagation= event bubbling and event capturing two context
-// document.getElementById("images").addEventListener(
-//       "click", function (e) {
-//         console.log(" clicked inside UL ")
-//         //console.log(e);
-        
-//     },false );
- //bublling means the event propagation from low to high so on owl it will firstly run the event attach to itself and then 
- //the outer element
- //Capturing means events are capture from top to bottom 
- //to unable capturing add true in the third parameter 
- //to stop propagation u needd to e.stopPropagation()
+    // document.getElementById("images").addEventListener(
+    //       "click", function (e) {
+    //         console.log(" clicked inside UL ")
+    //         //console.log(e);
 
-//  document.getElementById('google').addEventListener('click',(e)=>{
-//     console.log('clicked google');
-//     e.preventDefault()
-//     e.stopPropagation()
-//  })
- //scernerio click and disapprear the element
- document.querySelector('#images').addEventListener('click',(e)=>{
-                console.log(e.target);
+    //     },false );
+    //bublling means the event propagation from low to high so on owl it will firstly run the event attach to itself and then
+    //the outer element
+    //Capturing means events are capture from top to bottom
+    //to unable capturing add true in the third parameter
+    //to stop propagation u needd to e.stopPropagation()
 
-                let childToberemove=e.target.parentNode
-                if(e.target.tagName==="IMG"){
-                childToberemove.remove();
-                }
-                
- })
+    //  document.getElementById('google').addEventListener('click',(e)=>{
+    //     console.log('clicked google');
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //  })
+    //scernerio click and disapprear the element
+    document.querySelector("#images").addEventListener("click", (e) => {
+      console.log(e.target);
+
+      let childToberemove = e.target.parentNode;
+      if (e.target.tagName === "IMG") {
+        childToberemove.remove();
+      }
+    });
   </script>
 </html>
